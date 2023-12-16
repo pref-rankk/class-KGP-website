@@ -1,0 +1,140 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    height: 50vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(56,182,255,0.4), rgb(245,62,95,0.4));
+    /* Gradient overlay */
+    pointer-events: none;
+    z-index: 1;
+    /* Allow interactions with the image below */
+}
+
+.image-section h1 {
+    position: absolute;
+
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.h1-contact-us a{
+    color: white;
+    /* Set the text color to white */
+    text-decoration: none;
+    /* Remove the underline from the link */
+    position: relative;
+    /* Create a relative positioning context for pseudo-elements */
+}
+.h1-contact-us a:hover::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    /* Adjust the top position for your desired look */
+    left: -3px;
+    /* Adjust the left position for your desired look */
+    right: -3px;
+    /* Adjust the right position for your desired look */
+    bottom: -3px;
+    /* Adjust the bottom position for your desired look */
+    border: 2px solid white;
+    /* Add a white border */
+}
+
+
+
+.header img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.header h2 {
+    font-size: 36px;
+}
+
+.content1 {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(245, 62, 95, 0.2), rgb(56, 182, 255, 0.2));
+}
+
+.content1 h1 {
+    font-size: 48px;
+}
+
+.content1 p {
+    font-size: 18px;
+}
+
+.content-para{
+    text-align: left;
+}
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: rgb(56, 182, 255, 0.2);
+    
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    /* Add some space between the icon and text */
+    
+    z-index: 1;
+}
+
+.content2{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(56, 182, 255, 0.2), rgb(245, 62, 95, 0.3));
+}
+.contact-button {
+    margin-top: 20px;
+}
+
+.contributors{
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgb(245, 62, 95, 0.3), rgb(56, 182, 255, 0.2));
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
